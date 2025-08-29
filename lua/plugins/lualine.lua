@@ -6,14 +6,13 @@ local config = function()
 			section_separators = { left = "", right = "" },
 		},
 		sections = {
-			lualine_a = { "mode", "branch", "diff" },
-			lualine_b = {},
+			lualine_a = { "mode" },
+			lualine_b = { "branch", "diff" },
 			lualine_c = {},
 			lualine_x = {},
-			lualine_y = {},
-			lualine_z = { { "filename", file_status = true, path = 1 }, "diagnostics", "location" },
+			lualine_y = { { "filename", path = 4 }, "diagnostics" },
+			lualine_z = { "location" },
 		},
-		tabline = {},
 	})
 end
 

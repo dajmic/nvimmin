@@ -1,11 +1,5 @@
 local config = function()
-	require("telescope").setup({
-		pickers = {
-			buffers = {
-				initial_mode = "normal",
-			},
-		},
-	})
+	require("telescope").setup({})
 
 	local keymap = vim.keymap
 

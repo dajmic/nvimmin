@@ -47,6 +47,7 @@ local config = function()
 			"vtsls",
 			"vue_ls",
 			"lua_ls",
+			"cmake",
 		},
 	})
 
@@ -61,9 +62,9 @@ local config = function()
 	})
 
 	vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float, { desc = "Show diagnostic information" })
-	vim.diagnostic.config({
-		underline = false,
-	})
+	-- vim.diagnostic.config({
+	-- 	underline = false,
+	-- })
 
 	vim.api.nvim_create_autocmd("LspAttach", {
 		group = vim.api.nvim_create_augroup("UserLspConfig", {}),

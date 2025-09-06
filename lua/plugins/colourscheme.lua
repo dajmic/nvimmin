@@ -10,12 +10,13 @@
 -- end
 
 return {
-	"ellisonleao/gruvbox.nvim",
-	-- "dan-michell/lackluster.nvim",
+	"dan-michell/black-metal-theme-neovim",
 	lazy = false,
 	priority = 1000,
-	opts = {
-		transparent_mode = true,
-	},
-	-- config = config,
+	config = function()
+		require("black-metal").setup({
+			term_colors = false,
+			transparent = true,
+		})
+	end,
 }

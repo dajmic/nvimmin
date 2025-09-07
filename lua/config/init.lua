@@ -34,5 +34,4 @@ require("lazy").setup({
 	},
 })
 
--- load after lazy. mainly so colourscheme is not undefined
 require("config.options")

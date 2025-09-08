@@ -19,6 +19,8 @@ require("config.global")
 require("config.keymaps")
 require("config.autocmds")
 
+vim.opt.termguicolors = true -- True color support
+
 -- Setup lazy.nvim
 require("lazy").setup({
 	spec = {

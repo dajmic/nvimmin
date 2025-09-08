@@ -1,31 +1,19 @@
+local config = function()
+	local lackluster = require("lackluster")
+
+	lackluster.setup({
+		tweak_background = {
+			normal = "none", -- main background
+			telescope = "none", -- telescope
+			menu = "none", -- nvim_cmp, wildmenu ... (bad idea to transparent)
+			popup = "none", -- lazy, mason, whichkey ... (bad idea to transparent)
+		},
+	})
+end
+
 return {
-	"dan-michell/black-metal-theme-neovim",
+	"dan-michell/lackluster.nvim",
 	lazy = false,
 	priority = 1000,
-	config = function()
-		require("black-metal").setup({
-			theme = "bathory",
-			transparent = true,
-			plain_float = true,
-			term_colors = false,
-
-			plugin = {
-				lualine = {
-					-- Bold lualine_a sections
-					bold = false,
-					-- Don't set section/component backgrounds. Recommended to not set
-					-- section/component separators.
-					plain = true,
-				},
-				cmp = { -- works for nvim.cmp and blink.nvim
-					-- Don't highlight lsp-kind items. Only the current selection will be highlighted.
-					plain = false,
-					-- Reverse lsp-kind items' highlights in blink/cmp menu.
-					reverse = false,
-				},
-			},
-		})
-
-		require("black-metal").load()
-	end,
+	config = config,
 }

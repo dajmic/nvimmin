@@ -1,6 +1,6 @@
 {
   "LuaSnip": { "branch": "master", "commit": "21f74f7ba8c49f95f9d7c8293b147c2901dd2d3a" },
-  "black-metal-theme-neovim": { "branch": "main", "commit": "67383217db6c8ff7173b6348bdd70557f9d7dcaf" },
+  "black-metal-theme-neovim": { "branch": "main", "commit": "70b1a7ec8b82a2e4ccb8d5928f5cd5554abef1fb" },
   "cmp-nvim-lsp": { "branch": "main", "commit": "bd5a7d6db125d4654b50eeae9f5217f24bb22fd3" },
   "cmp-path": { "branch": "main", "commit": "c642487086dbd9a93160e1679a1327be111cbc25" },
   "cmp_luasnip": { "branch": "master", "commit": "98d9cb5c2c38532bd9bdb481067b20fea8f32e90" },

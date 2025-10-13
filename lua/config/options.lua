@@ -13,7 +13,6 @@ vim.opt.softtabstop = 4 -- Soft tab stop
 vim.opt.expandtab = true -- Use spaces instead of tabs
 vim.opt.smartindent = true -- Smart auto-indenting
 vim.opt.autoindent = true -- Copy indent from current line
-vim.opt.virtualedit = "all"
 
 -- search settings
 vim.opt.ignorecase = true -- Case insensitive search
@@ -39,7 +38,7 @@ vim.opt.lazyredraw = true -- Don't redraw during macros
 -- theme & transparency
 vim.opt.winborder = "rounded" -- Use single border for floating windows
 vim.opt.background = "dark" -- Use dark background
-vim.cmd.colorscheme("lackluster")
+vim.cmd.colorscheme("gruvbones")
 
 -- file handling
 vim.opt.backup = false -- Don't create backup files

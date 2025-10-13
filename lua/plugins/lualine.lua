@@ -4,6 +4,7 @@ local config = function()
 			globalstatus = true,
 			component_separators = { left = "|", right = "|" },
 			section_separators = { left = "", right = "" },
+			theme = "zenbones",
 		},
 		sections = {
 			lualine_a = { "mode" },

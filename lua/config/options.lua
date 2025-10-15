@@ -1,6 +1,6 @@
 -- basic settings
 vim.opt.number = true -- Line numbers
-vim.opt.cursorline = false -- To enable highlighting of current line number
+vim.opt.cursorline = true -- To enable highlighting of current line number
 vim.opt.relativenumber = true -- Relative line numbers
 vim.opt.wrap = false -- Don't wrap lines
 vim.opt.scrolloff = 10 -- Keep 10 lines above/below cursor

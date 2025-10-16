@@ -1,5 +1,15 @@
 local config = function()
-	require("telescope").setup({})
+	require("telescope").setup({
+		defaults = {
+			layout_strategy = "bottom_pane",
+			layout_config = {
+				bottom_pane = {
+					prompt_position = "bottom",
+				},
+			},
+			path_display = { "truncate" },
+		},
+	})
 
 	local keymap = vim.keymap
 

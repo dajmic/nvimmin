@@ -38,7 +38,7 @@ vim.opt.lazyredraw = true -- Don't redraw during macros
 -- theme & transparency
 vim.opt.winborder = "rounded" -- Use single border for floating windows
 vim.opt.background = "dark" -- Use dark background
-vim.cmd.colorscheme("lackluster")
+vim.cmd.colorscheme("gruvbox")
 
 -- file handling
 vim.opt.backup = false -- Don't create backup files

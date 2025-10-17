@@ -5,6 +5,7 @@ local config = function()
 			layout_config = {
 				bottom_pane = {
 					prompt_position = "bottom",
+					preview_cutoff = 60,
 				},
 			},
 			path_display = { "truncate" },

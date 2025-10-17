@@ -44,3 +44,8 @@ vim.keymap.set("v", "<C-r>", '"' .. replace_cmd, { desc = "Find and replace" })
 vim.keymap.set("n", "<leader>i", function()
 	vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled({ 0 }), { 0 })
 end)
+
+-- navigate buffers
+vim.keymap.set("n", "<S-l>", ":bnext<CR>", { desc = "Next buffer" })
+vim.keymap.set("n", "<S-h>", ":bprevious<CR>", { desc = "Previous buffer" })
+vim.keymap.set("n", "<leader>x", "<cmd> bp|sp|bn|bd! <CR>", { desc = "Close buffer" })

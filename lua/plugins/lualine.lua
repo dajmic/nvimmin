@@ -14,7 +14,7 @@ local config = function()
 			lualine_z = { "location" },
 		},
 		tabline = {
-			lualine_a = { "buffers" },
+			lualine_a = { { "buffers", max_length = vim.o.columns } },
 			lualine_b = {},
 			lualine_c = {},
 			lualine_x = {},

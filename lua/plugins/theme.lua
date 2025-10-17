@@ -34,7 +34,7 @@
 -- 			string_escape = "default",
 -- 			comment = color.gray5,
 -- 			builtin = "default", -- builtin modules and functions
--- 			type = color.lack,
+-- 			type = color.orange,
 -- 			keyword = color.gray7,
 -- 			keyword_return = color.gray7,
 -- 			keyword_exception = color.gray7,
@@ -86,30 +86,11 @@
 -- }
 
 return {
-	"ellisonleao/gruvbox.nvim",
+	"sainnhe/gruvbox-material",
 	priority = 1000,
-	config = true,
-	opts = {
-		terminal_colors = true, -- add neovim terminal colors
-		undercurl = true,
-		underline = true,
-		bold = false,
-		italic = {
-			strings = false,
-			emphasis = false,
-			comments = false,
-			operators = false,
-			folds = true,
-		},
-		strikethrough = true,
-		invert_selection = false,
-		invert_signs = false,
-		invert_tabline = false,
-		inverse = true, -- invert background for search, diffs, statuslines and errors
-		contrast = "", -- can be "hard", "soft" or empty string
-		palette_overrides = {},
-		overrides = {},
-		dim_inactive = false,
-		transparent_mode = false,
-	},
+	config = function()
+		vim.g.gruvbox_material_enable_italic = 0
+		vim.g.gruvbox_material_disable_italic_comment = 1
+		vim.g.gruvbox_material_foreground = "mix" --'material', 'mix', 'original'
+	end,
 }

@@ -92,5 +92,6 @@ return {
 		vim.g.gruvbox_material_enable_italic = 0
 		vim.g.gruvbox_material_disable_italic_comment = 1
 		vim.g.gruvbox_material_foreground = "mix" --'material', 'mix', 'original'
+		vim.g.gruvbox_material_transparent_background = 2
 	end,
 }
